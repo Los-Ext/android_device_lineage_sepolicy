@@ -12,3 +12,7 @@ hal_client_domain(platform_app, hal_lineage_powershare)
 
 # Allow externalstorage access
 allow platform_app mnt_pass_through_file:dir { create_dir_perms mounton };
+
+# Allow launcher app to read memory info
+r_dir_file(platform_app, config_gz)
+r_dir_file(platform_app, sysfs_zram)

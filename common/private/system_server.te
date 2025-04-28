@@ -8,6 +8,8 @@ allow system_server audioserver_tmpfs:file rw_file_perms;
 allow system_server tmpfs:file rw_file_perms;
 allow system_server zygote_tmpfs:file rw_file_perms;
 
+allow system_server shell:unix_stream_socket getopt;
+
 # Use HALs
 hal_client_domain(system_server, hal_lineage_health)
 hal_client_domain(system_server, hal_lineage_livedisplay)

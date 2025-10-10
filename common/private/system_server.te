@@ -19,5 +19,9 @@ get_prop(system_server, camera2_extensions_prop)
 # Let system server toggle xtra-daemon
 set_prop(system_server, xtra_control_prop)
 
+# Webview
+allow system_server webview_zygote:process setsched;
+allow system_server app_zygote:process setsched;
+
 # Freeform
 add_service(system_server, lmo_freeform_service);

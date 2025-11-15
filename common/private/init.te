@@ -1,0 +1,2 @@
+allow init adb_data_file:dir rw_dir_perms;
+allow init adb_data_file:file rw_file_perms;

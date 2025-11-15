@@ -1,1 +1,3 @@
 get_prop(device_as_webcam, usb_uvc_config_prop)
+allow device_as_webcam zygote:unix_stream_socket { read write getattr connectto };
+allow device_as_webcam zygote:fd use;

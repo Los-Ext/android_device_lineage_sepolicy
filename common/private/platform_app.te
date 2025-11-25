@@ -39,3 +39,5 @@ get_prop(platform_app, pm_archiving_enabled_prop)
 
 # Allow usb uvc properties to be found
 get_prop(platform_app, usb_uvc_enabled_prop)
+
+get_prop(platform_app, bluetooth_lea_prop)
